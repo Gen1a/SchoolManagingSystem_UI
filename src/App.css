@@ -1,0 +1,150 @@
+/* CONTAINER */
+.container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* NAVIGATION */
+.nav-icon-text {
+    display: none;
+}
+
+nav .dropdown-item {
+  background-color: #afafaf;
+  color: #1f4369;
+  font-weight: bold;
+}
+
+nav .dropdown-item:hover {
+  background-color: #345f8c;
+}
+
+nav .dropdown-item.active {
+  background-color: #345f8c;
+}
+
+nav .dropdown-menu {
+  background-color: #afafaf;
+  margin-right: 10px;
+  border-radius: 0.8rem;
+}
+
+.navbar-brand {
+  font-weight: bolder;
+  letter-spacing: 0.08rem;
+}
+
+.dropdown-toggle::after {
+  margin-left: 0.8em;
+  vertical-align: 0;
+  content: none;
+}
+
+.notification {
+  font-size: smaller;
+}
+
+/* JUMBOTRON */
+.jumbotron {
+    margin-bottom: 0;
+    background-color: #ffffff;
+}
+
+/* HOME */
+.home-container {
+    background-color: #acd5ff;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.card {
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+ul.features li
+{
+    position: relative;
+    height: 2em;
+    color: #888;
+}
+
+ul.features li:before
+{
+    content: "";
+    display: inline-block;
+    height: 3em;
+    width: 1px;
+    background: #aaaa;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: -11px;
+    top: -0.4em;
+    z-index: -1;
+}
+
+ul.features:before
+{
+    content: "●";
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1em;
+    top: 0.1em;
+    color: #aaa;
+}
+
+ul.features:after
+{
+    content: "●";
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1em;
+    top: -1em;
+    color: #aaa;
+}
+
+/* FORMS */
+form label {
+    font-weight: bold;
+}
+
+.custom-file{
+    width: 300px;
+}
+
+/* FOOTER */
+.footer {
+  position:fixed;
+  left:0;
+  bottom:0;
+  right:0;
+  max-height: 20px;
+  background-color: #212529;
+  color: #c0c0c0 !important;
+  font-size: smaller;
+}
+
+.footer a{
+  color: #c0c0c0;
+}
+
+@media (max-width: 992px) {
+    .nav-icon-text {
+        display: inline-block;
+        font-size: larger;
+        font-weight: bold;
+        margin-left: 20px;
+    }
+
+    .navbar-brand {
+      font-weight: bolder;
+      letter-spacing: 0;
+    }
+}
